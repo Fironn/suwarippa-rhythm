@@ -14,6 +14,7 @@ var countdata=0;
 const BPM=200;
 
 onload= function init(){
+  var start = performance.now();
   // var count=0;
   getScreenHeight();
   getScreenWidth();
@@ -30,6 +31,8 @@ onload= function init(){
     time(countdata);
     // console.log(countdata);
   }
+  var end = performance.now();
+  console.log( '実行時間 = ' + (end - start) + 'ミリ秒' );
 }
 
 function time(datanum){
@@ -176,3 +179,5 @@ function filltri(num){
     chx.fill();
   }
 }
+
+var end = Date.now();
