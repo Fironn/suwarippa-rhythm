@@ -14,6 +14,7 @@ var countdata=0;
 const BPM=200;
 
 onload= function init(){
+  startBle();
   var start = performance.now();
   // var count=0;
   getScreenHeight();
